@@ -1,1 +1,3 @@
 # Graph-Convolutions-and-NGD-Optimization
+
+This repo is meant to start with an introduction to graphs convolutions, motivating some of the ideas from the modern perspective of symmetries and representations. Afterwards, an example of an optimization to the classic GCN architecture, where in addition to the usual step in changing the weights by the gradient of the loss with respect to them, there is an additional matrix preconditioner that combines those gradients. This last idea will follow the original paper "Optimization of Graph Neural Networks with Natural Gradient Descent", https://arxiv.org/pdf/2008.09624. 
