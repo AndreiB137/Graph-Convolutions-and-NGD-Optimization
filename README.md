@@ -27,7 +27,7 @@ After we digested those various ideas, we turn to the NGD optimization. The pape
 
 # Mathematical details
 
-I have been naming preconditioner for a couple of times, but we are going to look at it now. # Point out to some notes again
+I have been naming preconditioner for a couple of times, but we are going to look at it now. The full description is ["NGD-Notes"], here I will mention just some of the crucial points. The preconditioner is describing a coupling or connection between the computed gradients. This preconditioner might be a consequence of describing the data space as a manifold with a metric on it. Hence, we naturally get the inverse of the metric multiplying the gradient. This expressions essentially comes from the interpretation of the gradient on the manifold as the only vector field of that function giving in the inner product with an arbitrary vector field the second vector field acting on the function. Thus, if we consider euclidean space we recover the usual gradient. A special scenario is a manifold with a Fisher metric. We know about the KL-divergence that is not symmetric, so it can't be a metric, but its second derivative is symmetric resulting in what is called the Fisher information metric. So, if we compute the inverse and multiply by the computed gradients (modifying the gradients resulting from the backward pass) we obtain the desired step update in the weights. Computing inverses is expensive, especially in the context of huge graphs, but this is aleviated by having mini-batches. Then, it is also time expensive, and this inconvenient can't be fixed. As it was presented in the notes, the expression of the Fisher matrix is also time inefficient to compute, therefore several [approximations](https://proceedings.mlr.press/v37/martens15.pdf) are used.
 
 ## A few comments on implementation
 
@@ -57,7 +57,7 @@ If you find this repository useful, please cite the following:
   year = {2024},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{[https://github.com/gordicaleksa/pytorch-GAT](https://github.com/AndreiB137/Graph-Convolutions-and-NGD-Optimization)}},
+  howpublished = {\url{https://github.com/AndreiB137/Graph-Convolutions-and-NGD-Optimization}},
 }
 ```
 
