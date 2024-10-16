@@ -44,8 +44,6 @@ Turning to implementation. At the time of writing, I can't match the performance
 
 ## Acknowledgements
 
-I want to give credits and appreciation to [Aleksa Gordić](https://github.com/gordicaleksa) for using a similar repository style as him.
-
 ## Citation
 
 If you find this repository useful, please cite the following:
