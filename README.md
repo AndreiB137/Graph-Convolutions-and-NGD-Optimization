@@ -36,6 +36,10 @@ I have been naming preconditioner for a couple of times, but we are going to loo
 <img src="Training Results/SGDWithNGD_epsilons.png" width="350"/>
 </p>
 
+<p align = "center">
+<img src="Training Results/Screenshot 2024-10-16 at 11.30.39.png" width = "200"/>
+</p>
+
 Turning to implementation. At the time of writting, I can't match the performance obtained by the paper (I also get contrary results) authors with my own code. Also, all my tests have been done on the small Cora dataset. I am still debugging and fixing things. For Adam, I can obtain most of the test accuracy statistics on Cora, but for SGD I am getting worse performance compared with the non-optimized version. As can be seen as a difference between the first and second plots above, the performance of the Adam model reaches its best for low values of epsilon, while the SGD for high values. This is in contrast with the faster convergence with both optimizers for low epsilon values. In third picture you can see how the accuracy of the model on the whole dataset increases or decreases depending on epsilon.
 
 ## Acknowledgements
