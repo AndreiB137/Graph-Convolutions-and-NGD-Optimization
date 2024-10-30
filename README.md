@@ -75,4 +75,4 @@ If you find this repository useful, please cite the following:
 
 ## Licence
 
-[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](LICENSE)
+[![License]((https://img.shields.io/badge/License-MIT-yellow.svg))](LICENSE)
