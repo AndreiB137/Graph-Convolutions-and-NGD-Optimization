@@ -75,4 +75,4 @@ If you find this repository useful, please cite the following:
 
 ## Licence
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/AndreiB137/Graph-Convolutions-and-NGD-Optimization/blob/main/LICENSE)
