@@ -57,6 +57,8 @@ I have been naming preconditioner for a couple of times, but we are going to loo
 Turning to implementation. At the time of writing, I can't match the performance obtained by the paper (I also get contrary results) authors with my own code. Also, all my tests have been done on the small Cora dataset. I am still debugging and fixing things. For Adam, I can obtain most of the test accuracy statistics on Cora, but for SGD, I am getting worse performance compared with the non-optimized version. As can be seen as a difference between the first and second plots above, the performance of the Adam model reaches its best for low values of epsilon, while the SGD for high values. This is in contrast with the faster convergence with both optimizers for low epsilon values. In the third picture, you can see how the accuracy of the model on the whole dataset increases or decreases depending on epsilon.
 
 ## Acknowledgements
+* [Maurice Weiler, Patric Forré, Erik Verlinde Max Welling](https://maurice-weiler.gitlab.io/cnn_book/EquivariantAndCoordinateIndependentCNNs.pdf)
+* ["Optimization of Graph Neural Networks with Natural Gradient Descent"](https://arxiv.org/pdf/2008.09624)
 
 ## Citation
 
